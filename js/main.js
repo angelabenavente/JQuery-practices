@@ -107,9 +107,25 @@ $(document).ready(function() { //Escuchamos cuando el DOM se ha cargado
     $(this).toggleClass('clicked');
   }) */
 
-  /*Escuchar el evento click y añadir/quitar clase al nodo que lo escucha */
+  /*Escuchar el evento click y añadir/quitar clase al nodo que lo escucha 
   $('#exampleTwo').on('click', 'button.switch', function() {
     console.log(this); //nos mostrará el botón y no el div #example
     $(this).parent().toggleClass('clicked'); //Se le aplica la clase al padre
-  })
+  }) */
+
+    /*Escuchar el evento click y añadir/quitar clase al nodo que lo escucha */
+  $('#exampleThree').on('click', 'button', function() {
+    //$('#place').val(); //Nos entrega el value seleccionado, pero no el precio
+    var selected = $('#exampleThree select option:selected') //seleccionada
+    var value = selected.val();
+    //var price = selected.attr('data-price') 
+    var price = selected.data('price') //esto es más correcto que usar attr
+
+    console.log(value);
+    console.log(price);
+
+    if(price) {
+      $('#result').html(value + '' + price);
+    }
+  });
 })
