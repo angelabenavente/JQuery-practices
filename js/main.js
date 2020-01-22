@@ -113,8 +113,8 @@ $(document).ready(function() { //Escuchamos cuando el DOM se ha cargado
     $(this).parent().toggleClass('clicked'); //Se le aplica la clase al padre
   }) */
 
-    /*Escuchar el evento click y añadir/quitar clase al nodo que lo escucha */
-  $('#exampleThree').on('click', 'button', function() {
+    /*Escuchar el evento change y mostrar valores en otro nodo*/
+  $('#exampleThree').on('change', '#place', function() {
     //$('#place').val(); //Nos entrega el value seleccionado, pero no el precio
     var selected = $('#exampleThree select option:selected') //seleccionada
     var value = selected.val();
