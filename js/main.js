@@ -28,7 +28,24 @@ $(document).ready(function() { //Escuchamos cuando el DOM se ha cargado
   var result = $('#animals .creature');
   console.log(result); */
 
-  /*Encontrar elementos de manera más eficiente atravesando el DOM */
+  /*Encontrar elementos de manera más eficiente atravesando el DOM 
   var result = $('#animals').find('.creature');
+  console.log(result); */
+
+  /*Encontrar todos los hijos directos con selectores
+  var result = $('#animals > *');
+  console.log(result)*/
+
+
+  /*Encontrar hijos directos determinados con selectores
+  var result = $('#animals > div');
+  console.log(result)*/
+
+  /*Encontrar todos los hijos directos con método children
+  var result = $('#animals').children();
+  console.log(result);*/
+
+  /*Encontrar hijos directos determinados con método children */
+  var result = $('#animals').children('div');
   console.log(result);
 })
