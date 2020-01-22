@@ -82,7 +82,28 @@ $(document).ready(function() { //Escuchamos cuando el DOM se ha cargado
   var result = $('#cat').parents('.category')
   console.log(result); */
 
-  /*Encontrar el elemento más cercano con X clase */
+  /*Encontrar el elemento más cercano con X clase
   var result = $('#cat').closest('.category')
-  console.log(result); 
+  console.log(result); */
+
+  /*Escuchar el evento click
+  $('#example').on('click', function() {
+    console.log('hola mundo');
+  }) */
+
+  /*Escuchar el evento click y mostrar el nodo que lo escucha
+  $('#example').on('click', function() {
+    console.log(this);
+    console.log($(this)); //Objeto con el que se puede trabajar.
+  }) */
+
+  /*Escuchar el evento click y añadir clase al nodo que lo escucha 
+  $('#example').on('click', function() {
+    $(this).addClass('clicked');
+  }) */
+
+  /*Escuchar el evento click y añadir/quitar clase al nodo que lo escucha */
+  $('#example').on('click', function() {
+    $(this).toggleClass('clicked');
+  })
 })

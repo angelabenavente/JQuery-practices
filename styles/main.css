@@ -22,3 +22,14 @@
   background-color: green;
   border: 1px solid #8b7b8b;
 }
+
+#example {
+  width: 100px;
+  height: 100px;
+  margin: 150px auto;
+  background-color: purple;
+}
+
+.clicked {
+  background-color: #e17bba !important;
+}
