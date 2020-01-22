@@ -21,6 +21,14 @@ $(document).ready(function() { //Escuchamos cuando el DOM se ha cargado
   /* Selec. por el valor del atributo
   $('input[placeholder="jon_nieve@gmail.com"]').addClass('highlighted') */
 
-  /* Selec. si contiene una palabra (distingue enre mayusculas y minúsculas) */
-  $('input[placeholder*="Jon"]').addClass('highlighted') //
+  /* Selec. si contiene una palabra (distingue enre mayusculas y minúsculas)
+  $('input[placeholder*="Jon"]').addClass('highlighted'); */
+
+  /* Encontrar elementos con selectores
+  var result = $('#animals .creature');
+  console.log(result); */
+
+  /*Encontrar elementos de manera más eficiente atravesando el DOM */
+  var result = $('#animals').find('.creature');
+  console.log(result);
 })

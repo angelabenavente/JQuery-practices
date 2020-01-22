@@ -10,3 +10,15 @@
 .important {
   background-color: rgb(231, 231, 104);
 }
+
+.creature {
+  margin: 20px;
+  background-color: #ffe1ff;
+  border: 1px solid #8b7b8b
+}
+
+.terrain {
+  margin: 20px;
+  background-color: green;
+  border: 1px solid #8b7b8b;
+}
