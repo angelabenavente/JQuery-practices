@@ -102,8 +102,14 @@ $(document).ready(function() { //Escuchamos cuando el DOM se ha cargado
     $(this).addClass('clicked');
   }) */
 
-  /*Escuchar el evento click y añadir/quitar clase al nodo que lo escucha */
+  /*Escuchar el evento click y añadir/quitar clase al nodo que lo escucha
   $('#example').on('click', function() {
     $(this).toggleClass('clicked');
+  }) */
+
+  /*Escuchar el evento click y añadir/quitar clase al nodo que lo escucha */
+  $('#exampleTwo').on('click', 'button.switch', function() {
+    console.log(this); //nos mostrará el botón y no el div #example
+    $(this).parent().toggleClass('clicked'); //Se le aplica la clase al padre
   })
 })
