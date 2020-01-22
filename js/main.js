@@ -65,8 +65,24 @@ $(document).ready(function() { //Escuchamos cuando el DOM se ha cargado
   var result = $('#animals').children().first().children().last().prev().prev();
   console.log(result); */
 
-  /*Encontrar un hijo indirecto  con método children y next */
+  /*Encontrar un hijo indirecto  con método children y next 
   var result = $('#animals').children().first().children().first().next();
-  console.log(result);
+  console.log(result); */
 
+  /*Encontrar el padre 
+  var result = $('#cat').parent()
+  console.log(result);  */
+
+
+  /*Encontrar los padres (directos e indirectos) 
+  var result = $('#cat').parents()
+  console.log(result);  */
+
+  /*Encontrar los padres (directos e indirectos) con X clase
+  var result = $('#cat').parents('.category')
+  console.log(result); */
+
+  /*Encontrar el elemento más cercano con X clase */
+  var result = $('#cat').closest('.category')
+  console.log(result); 
 })
