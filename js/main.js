@@ -135,9 +135,17 @@ $(document).ready(function() { //Escuchamos cuando el DOM se ha cargado
     $(this).parent().toggleClass('clicked'); //Se le aplica la clase al padre
   }) */
 
-    /*Escuchar el evento keydown y mostrar valores en otro nodo */
+  /*Escuchar el evento keydown y mostrar valores en otro nodo
   $('#fourthExample').on('keydown', 'input', function() {
     var selected = $('#fourthExample select option:selected') //seleccionada
     $('#resultTwo').html('Your name is: ' + $(this).val());
-  });
+  }); */
+
+  /*Deshabilitar un enlace */
+  $('#fifthExample').on('click', 'a', function(event) {
+    event.preventDefault(); // antes se usaba return: false
+    event.stopPropagation(); // evitar la propagación al padre del enlace
+    console.log('hi');
+  }); 
+
 })
