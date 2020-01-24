@@ -177,9 +177,21 @@ $(document).ready(function() { //Escuchamos cuando el DOM se ha cargado
 
 /*Petición Ajax sencilla */
   $('#exampleTwo').on('click', 'button.switch', function() {
-    $.ajax('result.html')
+    $.ajax('result.html', {
+      beforeSend: function() {
+        $('#result').text('Loading...');
+      }
+    })
       .done(function(response) {
         $('#result').html(response);
-      });
+      })
+      .fail(function(request, errorType, errorMessage) {
+        //timeout, error, abort, parseerror
+        console.log(errorType);
+        alert('Not found');
+      })
+      .always(function() {
+        $('#exampleTwo').text('Completado');
+      })
   });
 })
