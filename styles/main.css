@@ -33,3 +33,12 @@
 .clicked {
   background-color: #e17bba !important;
 }
+
+.example {
+  position: relative;
+  left: 28px;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  background-color: #3BEAB4;
+}

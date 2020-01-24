@@ -151,7 +151,28 @@ $(document).ready(function() { //Escuchamos cuando el DOM se ha cargado
   /*Vaciar el contenido html de un elemento
   $('#fifthExample').empty(); */
 
-  /*Crear un nuevo atributo para un elemento */
-  $('#fifthExample').attr('name', 'link');
+  /*Crear un nuevo atributo para un elemento 
+  $('#fifthExample').attr('name', 'link'); */
+
+/* Animaciones */
+  $('#example1').on('click', function() {
+    $(this).animate({
+      opacity: 0.3
+    }, 'fast', function() {alert('se ha completado')});     
+  });
+  
+  $('#example2').on('click', function() {
+    $(this).animate({
+      left: 200,
+      width: 50
+    }, 'slow');      
+  });
+
+  $('#example3').on('click', function() {
+    $(this).animate({
+      left: '+=50',
+      width: 200
+    }, 'slow');      
+  });
 
 })
