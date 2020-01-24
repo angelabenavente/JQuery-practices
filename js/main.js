@@ -141,11 +141,17 @@ $(document).ready(function() { //Escuchamos cuando el DOM se ha cargado
     $('#resultTwo').html('Your name is: ' + $(this).val());
   }); */
 
-  /*Deshabilitar un enlace */
+  /*Deshabilitar un enlace y la propagación del evento
   $('#fifthExample').on('click', 'a', function(event) {
     event.preventDefault(); // antes se usaba return: false
     event.stopPropagation(); // evitar la propagación al padre del enlace
     console.log('hi');
-  }); 
+  }); */
+
+  /*Vaciar el contenido html de un elemento
+  $('#fifthExample').empty(); */
+
+  /*Crear un nuevo atributo para un elemento */
+  $('#fifthExample').attr('name', 'link');
 
 })
