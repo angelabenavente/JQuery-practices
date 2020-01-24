@@ -175,4 +175,11 @@ $(document).ready(function() { //Escuchamos cuando el DOM se ha cargado
     }, 'slow');      
   });
 
+/*Petición Ajax sencilla */
+  $('#exampleTwo').on('click', 'button.switch', function() {
+    $.ajax('result.html')
+      .done(function(response) {
+        $('#result').html(response);
+      });
+  });
 })
