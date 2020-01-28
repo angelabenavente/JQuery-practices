@@ -1,0 +1,44 @@
+#container {
+  color: red;
+}
+
+.highlighted {
+  color: blue;
+  background-color: red;
+}
+
+.important {
+  background-color: rgb(231, 231, 104);
+}
+
+.creature {
+  margin: 20px;
+  background-color: #ffe1ff;
+  border: 1px solid #8b7b8b
+}
+
+.terrain {
+  margin: 20px;
+  background-color: green;
+  border: 1px solid #8b7b8b;
+}
+
+#example {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-color: purple;
+}
+
+.clicked {
+  background-color: #e17bba !important;
+}
+
+.example {
+  position: relative;
+  left: 28px;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  background-color: #3BEAB4;
+}

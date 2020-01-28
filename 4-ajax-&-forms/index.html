@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./styles/main.css" rel="stylesheet"
+        type="text/css">
+  </head>
+
+  <body>
+
+    <div id="example"></div>
+
+    <div id="exampleTwo">
+      <button class="switch">Click me</button>
+    </div>
+
+    <div id="exampleThree" class="wrapper">
+      <select id="place">
+        <option value="">Pick your destination</option>
+        <option value="santiago" data-price="100">Santiago</option>
+        <option value="madrid" data-price="180">Madrid</option>
+        <option value="yakarta" data-price="300">Yakarta</option>
+        <option value="istambul" data-price="150">Istambul</option>
+        <option value="tokyo" data-price="200">Tokyo</option>
+      </select>
+      <button>Pick</button>
+    </div>
+    <div id="result" class="container"></div>
+
+    <div id="fourthExample" class="container">
+      <input type="text" />
+    </div>
+    <div id="resultTwo" class="container"></div>
+
+    <div id="fifthExample" class="container">
+      <a href="http://google.com" target="_blank">Buscar en Google</a>
+    </div>
+
+    <div id="example1" class="example"></div>
+    <div id="example2" class="example"></div>
+    <div id="example3" class="example"></div>
+
+    <div id="result"></div>
+    <div class="form-container">
+      <form id="your-form" method="post">
+        <div class="form-row">
+          <label>Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-row">
+          <label>Address</label>
+          <input type="text" id="address" name="address" />
+        </div>
+        <div class="form-row">
+            <label>Age</label>
+            <input type="text" id="age" name="age" />
+        </div>
+        <div class="form-row">
+            <label>Any pets?</label>
+            <input type="checkbox" id="hasPets" name="hasPets" />
+        </div>
+        <div class="form-row" id="pets-row">
+            <label>Pet</label>
+            <select type="select" id="pet" name="pet">
+              <option value="">-</option>
+              <option value="Dog">Dog</option>
+              <option value="Cat">Cat</option>
+            </select>
+            <div id="pet-feedback"></div>
+        </div>
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
